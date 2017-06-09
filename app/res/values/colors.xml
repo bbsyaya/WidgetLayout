@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--重要-->
+    <color name="color_fc7946">#fc7946</color>
+    <color name="color_13334d">#13334d</color>
+    <color name="color_5c6bc2">#5c6bc2</color>
+    <color name="color_ff4081">#FF4081</color>
+    <!--一般-->
+    <color name="color_697d91">#697d91</color>
+    <color name="color_9dacb6">#9dacb6</color>
+
+    <!--较弱-->
+    <color name="color_d8e2e9">#d8e2e9</color>
+    <color name="color_edf2f6">#edf2f6</color>
+    <color name="color_55acee">#55acee</color>
+    <color name="color_5eb87b">#5eb87b</color>
+    <color name="color_e4362d">#e4362d</color>
+    <color name="window_background_color">#4790D3</color>
+    <color name="window_background_color1">#FEFEFE</color>
+</resources>

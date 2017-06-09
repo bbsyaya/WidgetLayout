@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NestFloatLayout">
+        <!--实现了嵌套滑动NestScrollingChild 接口的滑动的 View 所在的直接子 View 索引-->
+        <attr name="nestViewIndex" format="integer"/>
+        <!--需要吸顶到顶部的 View 所在的直接子 View 索引-->
+        <attr name="floatViewIndex" format="integer"/>
+    </declare-styleable>
+</resources>

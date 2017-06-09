@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PressViewGroup">
+        <!--hover drawable 忽略手势滑动到自身之外取消按下状态-->
+        <attr name="ignoreForegroundStateWhenTouchOut" format="boolean"/>
+        <!--hover drawable 颜色-->
+        <attr name="foregroundColor" format="color"/>
+        <!--hover drawable  圆角-->
+        <attr name="foregroundRadius" format="dimension"/>
+        <!--hover drawable 动画时间-->
+        <attr name="foregroundDuration" format="integer"/>
+        <!--hover drawable 最小不透明度-->
+        <attr name="foregroundAlphaMin" format="integer"/>
+        <!--hover drawable 最大不透明度-->
+        <attr name="foregroundAlphaMax" format="integer"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WrapLayout">
+        <!--每行内容水平和垂直居中-->
+        <attr name="lineCenterHorizontal" format="boolean"/>
+        <attr name="lineCenterVertical" format="boolean"/>
+
+        <!--每一行最少和最多的Item 个数-->
+        <attr name="lineMinItemCount" format="integer"/>
+        <attr name="lineMaxItemCount" format="integer"/>
+    </declare-styleable>
+</resources>

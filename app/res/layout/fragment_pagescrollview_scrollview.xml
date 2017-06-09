@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.rexy.widgets.group.WrapLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:lineCenterHorizontal="true">
+    <com.rexy.widgets.group.ColumnLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5C6BC2"
+        app:columnNumber="4"
+        app:stretchColumns="*"
+        app:columnCenterVertical="true"
+        app:contentMarginTop="3dp"
+        app:contentMarginBottom="5dp" >
+        <ToggleButton
+            android:id="@+id/toggleTransform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="anim"
+            android:textOn="anim" />
+        <ToggleButton
+            android:id="@+id/toggleChildCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textOff="center"
+            android:textOn="center" />
+        <ToggleButton
+            android:id="@+id/toggleFloatFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="floatFirst"
+            android:textOn="floatFirst" />
+        <ToggleButton
+            android:id="@+id/toggleFloatEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="floatLast"
+            android:textOn="floatLast" />
+    </com.rexy.widgets.group.ColumnLayout>
+    <com.rexy.widgets.group.PageScrollView
+        android:id="@+id/pageScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#5C6BC2"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:scrollbars="horizontal|vertical"
+        app:viewPagerStyle="false"
+        app:middleMargin="10dp"
+        app:childCenter="true"
+        app:floatViewEndIndex="-1"
+        app:floatViewStartIndex="-1"
+        app:overFlingDistance="20dp"
+        app:sizeFixedPercent="0">
+        <include layout="@layout/pagescrollview_scrollview_child" />
+    </com.rexy.widgets.group.PageScrollView>
+</com.rexy.widgets.group.WrapLayout>
+

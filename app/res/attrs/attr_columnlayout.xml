@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ColumnLayout">
+        <!--列个数-->
+        <attr name="columnNumber" format="integer" />
+        <!--每行内容垂直居中-->
+        <attr name="columnCenterVertical" format="boolean"/>
+
+        <!--列内内容全展开的索引 * 或 1,3,5 类似列索引0 开始-->
+        <attr name="stretchColumns" format="string" />
+        <!--列内内容全靠中间 * 或 1,3,5 类似列索引0 开始-->
+        <attr name="alignCenterColumns" format="string" />
+        <!--列内内容全靠右 * 或 1,3,5 类似列索引0 开始-->
+        <attr name="alignRightColumns" format="string" />
+
+        <!--列宽和高的最大最小值限定-->
+        <attr name="columnMinWidth" format="dimension" />
+        <attr name="columnMaxWidth" format="dimension" />
+        <attr name="columnMinHeight" format="dimension" />
+        <attr name="columnMaxHeight" format="dimension" />
+    </declare-styleable>
+</resources>

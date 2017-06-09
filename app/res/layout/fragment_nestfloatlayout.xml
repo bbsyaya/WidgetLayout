@@ -1,0 +1,46 @@
+<com.rexy.widgets.group.NestFloatLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:floatViewIndex="1"
+    app:nestViewIndex="2">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image"/>
+    <com.rexy.widgets.view.FadeTextButton
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/floatText"
+        android:gravity="center"
+        android:background="#363F59"
+        android:textColor="#CCC"
+        android:textStyle="bold"
+        android:text="FLOAT BUTTON FOR NEST LIST" />
+    <com.rexy.widgets.group.WrapLayout
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listView"
+            android:padding="10dp"
+            android:minHeight="100dp"
+            android:background="#5C6BC2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.rexy.widgets.group.WrapLayout>
+</com.rexy.widgets.group.NestFloatLayout>
+
+
+

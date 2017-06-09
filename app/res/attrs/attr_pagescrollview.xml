@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PageScrollView">
+        <!--布局方向，也决定了手势方向，仅支持水平和垂直之一。-->
+        <attr name="android:orientation"/>
+        <!--滑动交互 ViewPager 方式-->
+        <attr name="viewPagerStyle" format="boolean"/>
+        <!--所有的child居中-->
+        <attr name="childCenter" format="boolean"/>
+        <!--所有的child填充整个父容器-->
+        <attr name="childFillParent" format="boolean"/>
+        <!--内容item 的间距-->
+        <attr name="middleMargin" format="dimension"/>
+        <!--item 的size 按父容器的size 百分比-->
+        <attr name="sizeFixedPercent" format="float"/>
+        <!--快速滑动松手后的回弹距离-->
+        <attr name="overFlingDistance" format="dimension"/>
+        <!--滑动悬停到开始位置的child 索引-->
+        <attr name="floatViewStartIndex" format="integer"/>
+        <!--滑动悬停到结束位置的child 索引-->
+        <attr name="floatViewEndIndex" format="integer"/>
+    </declare-styleable>
+</resources>

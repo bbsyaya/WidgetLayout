@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.rexy.widgets.group.WrapLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:lineCenterHorizontal="true">
+    <com.rexy.widgets.group.ColumnLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5C6BC2"
+        app:columnNumber="4"
+        app:stretchColumns="*"
+        app:columnCenterVertical="true"
+        app:contentMarginTop="3dp"
+        app:contentMarginBottom="5dp">
+        <ToggleButton
+            android:id="@+id/toggleTransform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="anim"
+            android:textOn="anim" />
+        <ToggleButton
+            android:id="@+id/toggleChildCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textOff="center"
+            android:textOn="center" />
+        <ToggleButton
+            android:id="@+id/togglePageHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="header"
+            android:textOn="header" />
+        <ToggleButton
+            android:id="@+id/togglePageFooter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="footer"
+            android:textOn="footer" />
+    </com.rexy.widgets.group.ColumnLayout>
+    <com.rexy.widgets.group.PageScrollTab
+        android:id="@+id/pageTabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="42dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#eee"
+        android:orientation="horizontal"
+        android:textSize="14sp"
+        app:tabTopLineColor="#b2bcd0"
+        app:tabTopLineHeight="0.5dp"
+        app:tabBottomLineColor="#b2bcd0"
+        app:tabBottomLineHeight="0.5dp"
+        app:tabIndicatorColor="#5C6BC2"
+        app:tabIndicatorHeight="2dp"
+        app:tabItemDividerColor="#4790D3"
+        app:tabItemDividerPadding="10dp"
+        app:tabItemDividerWidth="0.45dp"
+        app:tabItemMinPaddingHorizontal="5dp"
+        app:tabItemMinPaddingTop="8dp"
+        app:tabItemMinPaddingBottom="8dp"
+        app:tabItemTextColor="@color/select_tab_item_text"/>
+    <com.rexy.widgets.group.PageScrollView
+        android:id="@+id/pageScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#5C6BC2"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:viewPagerStyle="true"
+        app:childCenter="true"
+        app:middleMargin="10dp"
+        app:floatViewEndIndex="-1"
+        app:floatViewStartIndex="-1"
+        app:overFlingDistance="0dp"
+        app:sizeFixedPercent="0">
+        <include layout="@layout/pagescrollview_viewpager_child" />
+    </com.rexy.widgets.group.PageScrollView>
+</com.rexy.widgets.group.WrapLayout>
+
