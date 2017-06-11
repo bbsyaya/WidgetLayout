@@ -29,6 +29,25 @@
 ![WrapLayout&LabelLayout][classlayer]
 
 
+
+# 适合的使用场景举例 按需要选择，减少布局嵌套和额外复杂的交互代码。
+
+ + 任何需要对容器自身或对直接子 View 的最大宽高限定以及支持 `gravity的不同Align`布局，都可适当选择以下容器。
+
+ + 任何需要对容器描边和子`View`间画分割线的，需要像ios 按下自带蒙层的效果可使用继承于`PressViewGroup`的容器，像`WrapLayout,LabelLayout,ColumnLayout`。
+
+ + `WrapLayout`和`LabelLayout` 适用于以行方式布局子控件，并能自适应大小自动换行，方便设置行最少最多的`View` 个数和行居中，
+
+ + `ColumnLayout`是特别适合列布局，等分布局的使用场景，方便调整每列的`Align`方式（左中右）和全铺满，或按child自已的`gravity`在所在列的格子里来布局，
+
+ + `NestFloatLayout` 适合嵌套滑动的列表，类似NestScrollView 。
+
+ + `PageScrollView` 可替代`ScrollView&HorizontalScrollView` 少嵌套，可设置任意子`View`滑动悬停在开始和结束位置，可不限定子`View`大小像 `ViewPager` 一样选中居中和滑动的交互。
+
+ + `WrapLayout,ColumnLayout`是完全可替代支持不同方向的`LinearLayout`并能提供更多的布局约束，和背景，描边，分割等额外装饰。
+
+
+
 # Demo 示例效果
 
 Demo 入口 和 `NestFloatLayout`的演示效果。
@@ -49,7 +68,7 @@ Demo 入口 和 `NestFloatLayout`的演示效果。
 ![ViewPager 模式 > viewpager.gif][viewpager]
 
 
-# 使用XML 属性和 API 简介
+# 如何使用：XML 属性和 API 简介
 
 ### 通用属性说明和介绍
 **注;所有xml 中使用自定义属性的地方，请在根标签中加上`xmlns:app="http://schemas.android.com/apk/res-auto"`**
@@ -325,7 +344,7 @@ b.java 其它接口设置
 ```
 
 
-c.`PageScrollTab` 继承于 `PagetScrollView` ，额外支持以下xml 属性（java 均有get 和set 对应）。
+c.`PageScrollTab` 继承于 `PageScrollView` ，额外支持以下xml 属性（java 均有get 和set 对应）。
 
 ```xml
  <!--tab item 的背景-->
@@ -379,22 +398,6 @@ java 额外的接口：
   });
 ```
 
-
-# 适合的使用场景举例 按需要选择，减少布局嵌套和额外复杂的交互代码。
-
- + 任何需要对容器自身或对直接子 View 的最大宽高限定以及支持 `gravity的不同Align`布局，都可适当选择以下容器。
-
- + 任何需要对容器描边和子`View`间画分割线的，需要像ios 按下自带蒙层的效果可使用继承于`PressViewGroup`的容器，像`WrapLayout,LabelLayout,ColumnLayout`。
-
- + `WrapLayout`和`LabelLayout` 适用于以行方式布局子控件，并能自适应大小自动换行，方便设置行最少最多的`View` 个数和行居中，
-
- + `ColumnLayout`是特别适合列布局，等分布局的使用场景，方便调整每列的`Align`方式（左中右）和全铺满，或按child自已的`gravity`在所在列的格子里来布局，
-
- + `NestFloatLayout` 适合嵌套滑动的列表，类似NestScrollView 。
-
- + `PageScrollView` 可替代`ScrollView&HorizontalScrollView` 少嵌套，可设置任意子`View`滑动悬停在开始和结束位置，可不限定子`View`大小像 `ViewPager` 一样选中居中和滑动的交互。
-
- + `WrapLayout,ColumnLayout`是完全可替代支持不同方向的'LinearLayout'并能提供更多的布局约束，和背景，描边，分割等额外装饰。
 
 
 
