@@ -42,11 +42,10 @@
         app:contentMarginLeft="15dp"
         app:contentMarginRight="15dp"
         app:contentMarginTop="5dp"
-        app:middleMarginHorizontal="5dp"
-        app:middleMarginVertical="15dp"
+        app:contentMarginMiddleHorizontal="5dp"
+        app:contentMarginMiddleVertical="15dp"
         app:dividerColorHorizontal="#5C6BC2"
-        app:dividerPaddingEndHorizontal="15dp"
-        app:dividerPaddingStartHorizontal="15dp">
+        app:dividerPaddingHorizontal="15dp">
         <com.rexy.widgets.view.FadeTextButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -207,7 +206,7 @@
         app:contentMarginTop="4dp"
         app:contentMarginRight="4dp"
         app:contentMarginBottom="4dp"
-        app:middleMarginVertical="5dp">
+        app:contentMarginMiddleVertical="5dp">
         <com.rexy.widgets.view.FadeTextButton
             android:id="@+id/viewColor1"
             android:minWidth="40dp"

@@ -15,10 +15,9 @@
         app:contentMarginTop="5dp"
         app:contentMarginRight="5dp"
         app:contentMarginBottom="5dp"
-        app:middleMarginVertical="10dp"
+        app:contentMarginMiddleVertical="10dp"
         app:dividerColorVertical="#4790D3"
-        app:dividerPaddingStartVertical="10dp"
-        app:dividerPaddingEndVertical="10dp"
+        app:dividerPaddingVertical="10dp"
         >
         <com.rexy.widgets.view.FadeTextButton
             android:id="@+id/toggleViewPager"

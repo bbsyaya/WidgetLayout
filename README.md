@@ -104,59 +104,61 @@ Demo 入口 和 `NestFloatLayout`的演示效果。
    b. xml 中使用支持`DividerMargin`属性和解释如下,java 都有对应的set 和get 方法:
 
 ```xml
-  <!--水平方向Item 的间距-->
-  <attr name="middleMarginHorizontal" format="dimension"/>
-  <!--垂直方向Item 的间距-->
-  <attr name="middleMarginVertical" format="dimension"/>
-
-  <!--内容四边的间距，不同于padding -->
-  <attr name="contentMarginLeft" format="dimension"/>
-  <attr name="contentMarginTop" format="dimension"/>
-  <attr name="contentMarginRight" format="dimension"/>
-  <attr name="contentMarginBottom" format="dimension"/>
-
-
-  <!--水平分割线颜色-->
-  <attr name="dividerColorHorizontal" format="color"/>
-  <!--水平分割线宽-->
-  <attr name="dividerWidthHorizontal" format="dimension"/>
-  <!--水平分割线开始padding-->
-  <attr name="dividerPaddingStartHorizontal" format="dimension"/>
-  <!--水平分割线结束padding-->
-  <attr name="dividerPaddingEndHorizontal" format="dimension"/>
-
-  <!--垂直分割线颜色-->
-  <attr name="dividerColorVertical" format="color"/>
-  <!--垂直分割线宽-->
-  <attr name="dividerWidthVertical" format="dimension"/>
-  <!--垂直分割线开始padding-->
-  <attr name="dividerPaddingStartVertical" format="dimension"/>
-  <!--垂直分割线结束padding-->
-  <attr name="dividerPaddingEndVertical" format="dimension"/>
-
   <!--左边线的颜色，宽度，和边线padding-->
   <attr name="borderLeftColor" format="color"/>
   <attr name="borderLeftWidth" format="dimension"/>
+  <attr name="borderLeftMargin" format="dimension"/>
   <attr name="borderLeftMarginStart" format="dimension"/>
   <attr name="borderLeftMarginEnd" format="dimension"/>
 
   <!--上边线的颜色，宽度，和边线padding-->
   <attr name="borderTopColor" format="color"/>
   <attr name="borderTopWidth" format="dimension"/>
+  <attr name="borderTopMargin" format="dimension"/>
   <attr name="borderTopMarginStart" format="dimension"/>
   <attr name="borderTopMarginEnd" format="dimension"/>
 
   <!--右边线的颜色，宽度，和边线padding-->
   <attr name="borderRightColor" format="color"/>
   <attr name="borderRightWidth" format="dimension"/>
+  <attr name="borderRightMargin" format="dimension"/>
   <attr name="borderRightMarginStart" format="dimension"/>
   <attr name="borderRightMarginEnd" format="dimension"/>
 
   <!--下边线的颜色，宽度，和边线padding-->
   <attr name="borderBottomColor" format="color"/>
   <attr name="borderBottomWidth" format="dimension"/>
+  <attr name="borderBottomMargin" format="dimension"/>
   <attr name="borderBottomMarginStart" format="dimension"/>
   <attr name="borderBottomMarginEnd" format="dimension"/>
+
+  <!--内容四边的间距，不同于padding -->
+  <attr name="contentMarginLeft" format="dimension"/>
+  <attr name="contentMarginTop" format="dimension"/>
+  <attr name="contentMarginRight" format="dimension"/>
+  <attr name="contentMarginBottom" format="dimension"/>
+  <!--水平方向和垂直方向Item 的间距-->
+  <attr name="contentMarginMiddleHorizontal" format="dimension"/>
+  <attr name="contentMarginMiddleVertical" format="dimension"/>
+
+
+  <!--水平分割线颜色-->
+  <attr name="dividerColorHorizontal" format="color"/>
+  <!--水平分割线宽-->
+  <attr name="dividerWidthHorizontal" format="dimension"/>
+  <!--水平分割线开始和结束padding-->
+  <attr name="dividerPaddingHorizontal" format="dimension"/>
+  <attr name="dividerPaddingHorizontalStart" format="dimension"/>
+  <attr name="dividerPaddingHorizontalEnd" format="dimension"/>
+
+  <!--垂直分割线颜色-->
+  <attr name="dividerColorVertical" format="color"/>
+  <!--垂直分割线宽-->
+  <attr name="dividerWidthVertical" format="dimension"/>
+  <!--垂直分割线开始 和结束padding-->
+  <attr name="dividerPaddingVertical" format="dimension"/>
+  <attr name="dividerPaddingVerticalStart" format="dimension"/>
+  <attr name="dividerPaddingVerticalEnd" format="dimension"/>
 ```
 
 
@@ -231,23 +233,32 @@ Demo 入口 和 `NestFloatLayout`的演示效果。
 3.`ColumnLayout` xml 属性支持属性如下：java 都有对应的set 和get 方法就不给示例了。
 
 ``` xml
- <!--列个数-->
- <attr name="columnNumber" format="integer" />
- <!--每行内容垂直居中-->
- <attr name="columnCenterVertical" format="boolean"/>
+  <!--列个数-->
+  <attr name="columnNumber" format="integer" />
+  <!--每行内容垂直居中-->
+  <attr name="columnCenterVertical" format="boolean"/>
 
- <!--列内内容全展开的索引 * 或 1,3,5 类似列索引0 开始-->
- <attr name="stretchColumns" format="string" />
- <!--列内内容全靠中间 * 或 1,3,5 类似列索引0 开始-->
- <attr name="alignCenterColumns" format="string" />
- <!--列内内容全靠右 * 或 1,3,5 类似列索引0 开始-->
- <attr name="alignRightColumns" format="string" />
+  <!--列内内容全展开的索引 * 或 1,3,5 类似列索引0 开始-->
+  <attr name="stretchColumns" format="string" />
+  <!--列内内容全靠中间 * 或 1,3,5 类似列索引0 开始-->
+  <attr name="alignCenterColumns" format="string" />
+  <!--列内内容全靠右 * 或 1,3,5 类似列索引0 开始-->
+  <attr name="alignRightColumns" format="string" />
 
- <!--列宽和高的最大最小值限定-->
- <attr name="columnMinWidth" format="dimension" />
- <attr name="columnMaxWidth" format="dimension" />
- <attr name="columnMinHeight" format="dimension" />
- <attr name="columnMaxHeight" format="dimension" />
+  <!--列宽和高的最大最小值限定-->
+  <attr name="columnMinWidth" format="dimension" />
+  <attr name="columnMaxWidth" format="dimension" />
+  <attr name="columnMinHeight" format="dimension" />
+  <attr name="columnMaxHeight" format="dimension" />
+
+  <!-- 列分割线颜色-->
+  <attr name="columnDividerColor" format="color"/>
+  <!--列分割线宽-->
+  <attr name="columnDividerWidth" format="dimension"/>
+  <!--列分割线开始 和结束padding-->
+  <attr name="columnDividerPadding" format="dimension"/>
+  <attr name="columnDividerPaddingStart" format="dimension"/>
+  <attr name="columnDividerPaddingEnd" format="dimension"/>
 ```
 
 4.`NestFloatLayou` xml 属性支持属性和 java 代码如下：

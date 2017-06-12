@@ -230,12 +230,12 @@ public abstract class PressViewGroup extends BaseViewGroup {
         return mDividerMargin.getBorderBottomMarginEnd();
     }
 
-    public int getMiddleMarginHorizontal() {
-        return mDividerMargin.getMiddleMarginHorizontal();
+    public int getContentMarginMiddleHorizontal() {
+        return mDividerMargin.getContentMarginMiddleHorizontal();
     }
 
-    public int getMiddleMarginVertical() {
-        return mDividerMargin.getMiddleMarginVertical();
+    public int getContentMarginMiddleVertical() {
+        return mDividerMargin.getContentMarginMiddleVertical();
     }
 
     public int getContentMarginLeft() {
@@ -271,19 +271,19 @@ public abstract class PressViewGroup extends BaseViewGroup {
     }
 
     public int getDividerPaddingStartHorizontal() {
-        return mDividerMargin.getDividerPaddingStartHorizontal();
+        return mDividerMargin.getDividerPaddingHorizontalStart();
     }
 
     public int getDividerPaddingStartVertical() {
-        return mDividerMargin.getDividerPaddingStartVertical();
+        return mDividerMargin.getDividerPaddingVerticalStart();
     }
 
     public int getDividerPaddingEndHorizontal() {
-        return mDividerMargin.getDividerPaddingEndHorizontal();
+        return mDividerMargin.getDividerPaddingHorizontalEnd();
     }
 
     public int getDividerPaddingEndVertical() {
-        return mDividerMargin.getDividerPaddingEndVertical();
+        return mDividerMargin.getDividerPaddingVerticalEnd();
     }
 
     public void setBorderLeftColor(int color) {
@@ -366,16 +366,16 @@ public abstract class PressViewGroup extends BaseViewGroup {
         invalidate();
     }
 
-    public void setMiddleMarginHorizontal(int middleMarginHorizontal) {
-        if (middleMarginHorizontal != mDividerMargin.getMiddleMarginHorizontal()) {
-            mDividerMargin.setMiddleMarginHorizontal(middleMarginHorizontal);
+    public void setContentMarginMiddleHorizontal(int contentMarginMiddleHorizontal) {
+        if (contentMarginMiddleHorizontal != mDividerMargin.getContentMarginMiddleHorizontal()) {
+            mDividerMargin.setContentMarginMiddleHorizontal(contentMarginMiddleHorizontal);
             requestLayout();
         }
     }
 
-    public void setMiddleMarginVertical(int middleMarginVertical) {
-        if (middleMarginVertical != mDividerMargin.getMiddleMarginVertical()) {
-            mDividerMargin.setMiddleMarginVertical(middleMarginVertical);
+    public void setContentMarginMiddleVertical(int contentMarginMiddleVertical) {
+        if (contentMarginMiddleVertical != mDividerMargin.getContentMarginMiddleVertical()) {
+            mDividerMargin.setContentMarginMiddleVertical(contentMarginMiddleVertical);
             requestLayout();
         }
     }
@@ -429,22 +429,22 @@ public abstract class PressViewGroup extends BaseViewGroup {
     }
 
     public void setDividerPaddingStartHorizontal(int dividerPaddingStartHorizontal) {
-        mDividerMargin.setDividerPaddingStartHorizontal(dividerPaddingStartHorizontal);
+        mDividerMargin.setDividerPaddingHorizontalStart(dividerPaddingStartHorizontal);
         invalidate();
     }
 
     public void setDividerPaddingStartVertical(int dividerPaddingStartVertical) {
-        mDividerMargin.setDividerPaddingStartVertical(dividerPaddingStartVertical);
+        mDividerMargin.setDividerPaddingVerticalStart(dividerPaddingStartVertical);
         invalidate();
     }
 
     public void setDividerPaddingEndHorizontal(int dividerPaddingEndHorizontal) {
-        mDividerMargin.setDividerPaddingEndHorizontal(dividerPaddingEndHorizontal);
+        mDividerMargin.setDividerPaddingHorizontalEnd(dividerPaddingEndHorizontal);
         invalidate();
     }
 
     public void setDividerPaddingEndVertical(int dividerPaddingEndVertical) {
-        mDividerMargin.setDividerPaddingEndVertical(dividerPaddingEndVertical);
+        mDividerMargin.setDividerPaddingVerticalEnd(dividerPaddingEndVertical);
         invalidate();
     }
 }

@@ -18,5 +18,14 @@
         <attr name="columnMaxWidth" format="dimension" />
         <attr name="columnMinHeight" format="dimension" />
         <attr name="columnMaxHeight" format="dimension" />
+
+        <!-- 列分割线颜色-->
+        <attr name="columnDividerColor" format="color"/>
+        <!--列分割线宽-->
+        <attr name="columnDividerWidth" format="dimension"/>
+        <!--列分割线开始 和结束padding-->
+        <attr name="columnDividerPadding" format="dimension"/>
+        <attr name="columnDividerPaddingStart" format="dimension"/>
+        <attr name="columnDividerPaddingEnd" format="dimension"/>
     </declare-styleable>
 </resources>

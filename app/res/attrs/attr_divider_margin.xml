@@ -1,54 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="DividerMargin">
-        <!--水平方向和垂直方向Item 的间距-->
-        <attr name="middleMarginHorizontal" format="dimension"/>
-        <attr name="middleMarginVertical" format="dimension"/>
-
-        <!--内容四边的间距，不同于padding -->
-        <attr name="contentMarginLeft" format="dimension"/>
-        <attr name="contentMarginTop" format="dimension"/>
-        <attr name="contentMarginRight" format="dimension"/>
-        <attr name="contentMarginBottom" format="dimension"/>
-
-        <!--水平分割线颜色-->
-        <attr name="dividerColorHorizontal" format="color"/>
-        <!--水平分割线宽-->
-        <attr name="dividerWidthHorizontal" format="dimension"/>
-        <!--水平分割线开始和结束padding-->
-        <attr name="dividerPaddingStartHorizontal" format="dimension"/>
-        <attr name="dividerPaddingEndHorizontal" format="dimension"/>
-
-        <!--垂直分割线颜色-->
-        <attr name="dividerColorVertical" format="color"/>
-        <!--垂直分割线宽-->
-        <attr name="dividerWidthVertical" format="dimension"/>
-        <!--垂直分割线开始 和结束padding-->
-        <attr name="dividerPaddingStartVertical" format="dimension"/>
-        <attr name="dividerPaddingEndVertical" format="dimension"/>
-
         <!--左边线的颜色，宽度，和边线padding-->
         <attr name="borderLeftColor" format="color"/>
         <attr name="borderLeftWidth" format="dimension"/>
+        <attr name="borderLeftMargin" format="dimension"/>
         <attr name="borderLeftMarginStart" format="dimension"/>
         <attr name="borderLeftMarginEnd" format="dimension"/>
 
         <!--上边线的颜色，宽度，和边线padding-->
         <attr name="borderTopColor" format="color"/>
         <attr name="borderTopWidth" format="dimension"/>
+        <attr name="borderTopMargin" format="dimension"/>
         <attr name="borderTopMarginStart" format="dimension"/>
         <attr name="borderTopMarginEnd" format="dimension"/>
 
         <!--右边线的颜色，宽度，和边线padding-->
         <attr name="borderRightColor" format="color"/>
         <attr name="borderRightWidth" format="dimension"/>
+        <attr name="borderRightMargin" format="dimension"/>
         <attr name="borderRightMarginStart" format="dimension"/>
         <attr name="borderRightMarginEnd" format="dimension"/>
 
         <!--下边线的颜色，宽度，和边线padding-->
         <attr name="borderBottomColor" format="color"/>
         <attr name="borderBottomWidth" format="dimension"/>
+        <attr name="borderBottomMargin" format="dimension"/>
         <attr name="borderBottomMarginStart" format="dimension"/>
         <attr name="borderBottomMarginEnd" format="dimension"/>
+
+        <!--内容四边的间距，不同于padding -->
+        <attr name="contentMarginLeft" format="dimension"/>
+        <attr name="contentMarginTop" format="dimension"/>
+        <attr name="contentMarginRight" format="dimension"/>
+        <attr name="contentMarginBottom" format="dimension"/>
+        <!--水平方向和垂直方向Item 的间距-->
+        <attr name="contentMarginMiddleHorizontal" format="dimension"/>
+        <attr name="contentMarginMiddleVertical" format="dimension"/>
+
+
+        <!--水平分割线颜色-->
+        <attr name="dividerColorHorizontal" format="color"/>
+        <!--水平分割线宽-->
+        <attr name="dividerWidthHorizontal" format="dimension"/>
+        <!--水平分割线开始和结束padding-->
+        <attr name="dividerPaddingHorizontal" format="dimension"/>
+        <attr name="dividerPaddingHorizontalStart" format="dimension"/>
+        <attr name="dividerPaddingHorizontalEnd" format="dimension"/>
+
+        <!--垂直分割线颜色-->
+        <attr name="dividerColorVertical" format="color"/>
+        <!--垂直分割线宽-->
+        <attr name="dividerWidthVertical" format="dimension"/>
+        <!--垂直分割线开始 和结束padding-->
+        <attr name="dividerPaddingVertical" format="dimension"/>
+        <attr name="dividerPaddingVerticalStart" format="dimension"/>
+        <attr name="dividerPaddingVerticalEnd" format="dimension"/>
     </declare-styleable>
 </resources>

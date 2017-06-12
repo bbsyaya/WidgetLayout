@@ -133,8 +133,8 @@ public class WrapLayout extends PressViewGroup {
         int currentLineItemCount = 0;
 
         int contentWidth = 0, contentHeight = 0, childState = 0;
-        int middleMarginHorizontal = mDividerMargin.getMiddleMarginHorizontal();
-        int middleMarginVertical = mDividerMargin.getMiddleMarginVertical();
+        int middleMarginHorizontal = mDividerMargin.getContentMarginMiddleHorizontal();
+        int middleMarginVertical = mDividerMargin.getContentMarginMiddleVertical();
 
         for (int childIndex = 0; childIndex < childCount; childIndex++) {
             final View child = getChildAt(childIndex);
@@ -193,8 +193,8 @@ public class WrapLayout extends PressViewGroup {
         final int lineCount = mLineEndIndex.size(), gravity = getGravity();
         final boolean lineVertical = mEachLineCenterVertical || ((gravity & Gravity.VERTICAL_GRAVITY_MASK) == Gravity.CENTER_VERTICAL && lineCount == 1);
         final boolean lineHorizontal = mEachLineCenterHorizontal || ((gravity & Gravity.HORIZONTAL_GRAVITY_MASK) == Gravity.CENTER_HORIZONTAL && lineCount == 1);
-        final int middleMarginHorizontal = mDividerMargin.getMiddleMarginHorizontal();
-        final int middleMarginVertical = mDividerMargin.getMiddleMarginVertical();
+        final int middleMarginHorizontal = mDividerMargin.getContentMarginMiddleHorizontal();
+        final int middleMarginVertical = mDividerMargin.getContentMarginMiddleVertical();
         final int contentMarginLeft=mDividerMargin.getContentMarginLeft();
         final int contentMarginTop=mDividerMargin.getContentMarginTop();
         final int contentWidthNoMargin=getContentWidth()-mDividerMargin.getContentMarginLeft()-mDividerMargin.getContentMarginRight();
@@ -237,8 +237,8 @@ public class WrapLayout extends PressViewGroup {
         boolean dividerVertical = mDividerMargin.isVisibleDividerVertical(true);
         if (dividerHorizontal || dividerVertical) {
             final int lineCount = mLineEndIndex.size();
-            final int middleMarginHorizontal = mDividerMargin.getMiddleMarginHorizontal();
-            final int middleMarginVertical = mDividerMargin.getMiddleMarginVertical();
+            final int middleMarginHorizontal = mDividerMargin.getContentMarginMiddleHorizontal();
+            final int middleMarginVertical = mDividerMargin.getContentMarginMiddleVertical();
             final int contentMarginTop=mDividerMargin.getContentMarginTop();
 
             int parentLeft = getPaddingLeft();

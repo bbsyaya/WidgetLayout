@@ -29,14 +29,12 @@
         app:contentMarginTop="10dp"
         app:contentMarginRight="10dp"
         app:contentMarginBottom="10dp"
-        app:middleMarginHorizontal="5dp"
-        app:middleMarginVertical="8dp"
+        app:contentMarginMiddleHorizontal="5dp"
+        app:contentMarginMiddleVertical="8dp"
         app:dividerColorHorizontal="#4790D3"
-        app:dividerPaddingStartHorizontal="10dp"
-        app:dividerPaddingEndHorizontal="10dp"
+        app:dividerPaddingHorizontal="10dp"
         app:dividerColorVertical="#363F59"
-        app:dividerPaddingStartVertical="1dp"
-        app:dividerPaddingEndVertical="1dp"
+        app:dividerPaddingVertical="1dp"
         app:foregroundColor="#000" />
 
     <com.rexy.widgets.group.ColumnLayout
@@ -55,9 +53,8 @@
         app:contentMarginRight="5dp"
         app:contentMarginTop="5dp"
         app:dividerColorVertical="#4790D3"
-        app:dividerPaddingStartVertical="10dp"
-        app:dividerPaddingEndVertical="10dp"
-        app:middleMarginVertical="10dp"
+        app:dividerPaddingVertical="10dp"
+        app:contentMarginMiddleVertical="10dp"
         app:stretchColumns="*">
         <com.rexy.widgets.view.FadeTextButton
             android:id="@+id/viewRemove"
